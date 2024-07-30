@@ -23,6 +23,12 @@ int main(int argc, char *argv[]) {
       std::cout << i << std::endl;
     break;
   }
+  case 'C': {
+    std::vector<int> sorted_vector = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+    bool result = searchAlgorithms::binarySearch(sorted_vector, 10);
+    std::cout << result << std::endl;
+    break;
+  }
   default: {
     std::cout << "No parameters" << std::endl;
   }
