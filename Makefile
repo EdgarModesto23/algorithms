@@ -4,3 +4,6 @@ build:
 insertionSort:
 	./dist/algorithms.out A
 
+reverseInsertionSort:
+	./dist/algorithms.out B
+
