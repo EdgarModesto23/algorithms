@@ -29,6 +29,15 @@ int main(int argc, char *argv[]) {
     std::cout << result << std::endl;
     break;
   }
+  case 'D': {
+    std::vector<int> unsorted_vector{4, 5, 3, 2, 1, 7};
+    algorithms::bubbleSort(unsorted_vector);
+    for (auto i : unsorted_vector) {
+      std::cout << i << ", ";
+    }
+    std::cout << "\n";
+    break;
+  }
   default: {
     std::cout << "No parameters" << std::endl;
   }
