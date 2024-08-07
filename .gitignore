@@ -1,7 +1,7 @@
 # Prerequisites
 *.d
 ./dist/*
-
+./dist/algorithms
 
 # Compiled Object files
 *.slo

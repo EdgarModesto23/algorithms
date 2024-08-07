@@ -38,6 +38,13 @@ int main(int argc, char *argv[]) {
     std::cout << "\n";
     break;
   }
+  case 'E': {
+    std::vector<int> list{1, 2, 3, 4, 5, 6, 7, 8};
+    auto result = leetcode::twoSum(list, 9);
+    if (result.size() == 2) {
+      std::cout << result[0] << " " << result[1] << "\n";
+    }
+  } break;
   default: {
     std::cout << "No parameters" << std::endl;
   }

@@ -6,6 +6,10 @@
 #include <string>
 #include <vector>
 
+namespace leetcode {
+std::vector<int> twoSum(std::vector<int> A, int target);
+}
+
 namespace algorithms {
 std::vector<int> insertionSort(std::vector<int> A);
 std::vector<int> invertedInsertionSort(std::vector<int> A);
