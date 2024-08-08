@@ -1,4 +1,4 @@
-#include "headers/main.h"
+#include "headers/main.hpp"
 #include <vector>
 
 using namespace std;

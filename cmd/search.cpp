@@ -1,4 +1,4 @@
-#include "headers/main.h"
+#include "headers/main.hpp"
 #include <cmath>
 
 bool searchAlgorithms::linearSearch(std::vector<int> A, int key) {

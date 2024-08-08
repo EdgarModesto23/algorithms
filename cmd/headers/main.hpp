@@ -1,14 +1,14 @@
 #pragma once
 
 #include <cstddef>
-#include <iostream>
 #include <map>
 #include <string>
 #include <vector>
 
 namespace leetcode {
 std::vector<int> twoSum(std::vector<int> A, int target);
-}
+int fib(int n);
+} // namespace leetcode
 
 namespace algorithms {
 std::vector<int> insertionSort(std::vector<int> A);

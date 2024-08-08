@@ -2,7 +2,7 @@
 *.d
 ./dist/*
 ./dist/algorithms
-
+.cache/
 # Compiled Object files
 *.slo
 *.lo

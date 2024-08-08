@@ -1,4 +1,4 @@
-#include "headers/main.h"
+#include "main.hpp"
 #include <iostream>
 #include <ostream>
 #include <vector>
@@ -45,6 +45,11 @@ int main(int argc, char *argv[]) {
       std::cout << result[0] << " " << result[1] << "\n";
     }
   } break;
+  case 'F': {
+    auto result = leetcode::fib(20);
+    std::cout << result << "\n";
+    break;
+  }
   default: {
     std::cout << "No parameters" << std::endl;
   }
