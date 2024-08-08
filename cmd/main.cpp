@@ -46,7 +46,8 @@ int main(int argc, char *argv[]) {
     }
   } break;
   case 'F': {
-    auto result = leetcode::fib(20);
+    std::map<int, int> memo{};
+    auto result = leetcode::fib(10000, memo);
     std::cout << result << "\n";
     break;
   }

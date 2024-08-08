@@ -7,7 +7,7 @@
 
 namespace leetcode {
 std::vector<int> twoSum(std::vector<int> A, int target);
-int fib(int n);
+int fib(int n, std::map<int, int> &memo);
 } // namespace leetcode
 
 namespace algorithms {
