@@ -51,6 +51,13 @@ int main(int argc, char *argv[]) {
     std::cout << result << "\n";
     break;
   }
+  case 'G': {
+    std::vector<int> prices{1, 5, 8, 9, 10, 17, 17, 20, 24, 30};
+    std::map<int, int> memo{};
+    int res = leetcode::rod_cutting(10, prices, memo);
+    std::cout << res << "\n";
+    break;
+  }
   default: {
     std::cout << "No parameters" << std::endl;
   }

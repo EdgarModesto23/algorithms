@@ -8,6 +8,7 @@
 namespace leetcode {
 std::vector<int> twoSum(std::vector<int> A, int target);
 int fib(int n, std::map<int, int> &memo);
+int rod_cutting(int length, std::vector<int> prices, std::map<int, int> &memo);
 } // namespace leetcode
 
 namespace algorithms {
