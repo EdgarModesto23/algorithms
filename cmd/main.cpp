@@ -6,7 +6,7 @@
 using namespace algorithms;
 
 int main(int argc, char *argv[]) {
-  auto a = *argv[1];
+  auto a = 'H';
   switch (a) {
   case 'A': {
     std::vector<int> unsorted_vector = {5, 3, 2, 6, 1, 4};
