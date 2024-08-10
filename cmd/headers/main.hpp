@@ -13,6 +13,8 @@ int rod_cutting(int length, std::vector<int> prices, std::map<int, int> &memo);
 class Solution {
 public:
   int numMagicSquaresInside(std::vector<std::vector<int>> &grid);
+  bool containsDuplicate(std::vector<int> &nums);
+  bool isAnagram(std::string s, std::string t);
   Solution();
 };
 } // namespace leetcode

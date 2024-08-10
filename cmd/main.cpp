@@ -1,12 +1,13 @@
 #include "main.hpp"
 #include <iostream>
 #include <ostream>
+#include <string>
 #include <vector>
 
 using namespace algorithms;
 
 int main(int argc, char *argv[]) {
-  auto a = 'H';
+  auto a = 'I';
   switch (a) {
   case 'A': {
     std::vector<int> unsorted_vector = {5, 3, 2, 6, 1, 4};
@@ -60,12 +61,23 @@ int main(int argc, char *argv[]) {
   }
   case 'H': {
     leetcode::Solution sol;
-    std::vector<std::vector<int>> grid{
-        {4, 3, 8, 4}, {9, 5, 1, 9}, {2, 7, 6, 2}};
+    std::vector<std::vector<int>> grid = {{3, 2, 9, 2, 7},
+                                          {6, 1, 8, 4, 2},
+                                          {7, 5, 3, 2, 7},
+                                          {2, 9, 4, 9, 6},
+                                          {4, 3, 8, 2, 5}};
     int res = sol.numMagicSquaresInside(grid);
     std::cout << res << "\n";
     break;
   };
+  case 'I': {
+    leetcode::Solution sol;
+    std::string s{"aacc"};
+    std::string t{"ccac"};
+    auto res = sol.isAnagram(s, t);
+    std::cout << res << "\n";
+    break;
+  }
   default: {
     std::cout << "No parameters" << std::endl;
   }
