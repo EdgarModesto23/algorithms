@@ -58,6 +58,14 @@ int main(int argc, char *argv[]) {
     std::cout << res << "\n";
     break;
   }
+  case 'H': {
+    leetcode::Solution sol;
+    std::vector<std::vector<int>> grid{
+        {4, 3, 8, 4}, {9, 5, 1, 9}, {2, 7, 6, 2}};
+    int res = sol.numMagicSquaresInside(grid);
+    std::cout << res << "\n";
+    break;
+  };
   default: {
     std::cout << "No parameters" << std::endl;
   }
