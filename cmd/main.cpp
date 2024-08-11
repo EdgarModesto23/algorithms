@@ -7,7 +7,7 @@
 using namespace algorithms;
 
 int main(int argc, char *argv[]) {
-  auto a = 'I';
+  auto a = 'J';
   switch (a) {
   case 'A': {
     std::vector<int> unsorted_vector = {5, 3, 2, 6, 1, 4};
@@ -77,6 +77,16 @@ int main(int argc, char *argv[]) {
     auto res = sol.isAnagram(s, t);
     std::cout << res << "\n";
     break;
+  }
+  case 'J': {
+    leetcode::Solution sol;
+    std::vector<std::string> strs{""};
+    auto res{sol.groupAnagrams(strs)};
+    for (auto i : res) {
+      for (auto j : i) {
+        std::cout << j << "\n";
+      }
+    }
   }
   default: {
     std::cout << "No parameters" << std::endl;

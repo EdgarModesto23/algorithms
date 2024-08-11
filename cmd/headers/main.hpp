@@ -15,6 +15,8 @@ public:
   int numMagicSquaresInside(std::vector<std::vector<int>> &grid);
   bool containsDuplicate(std::vector<int> &nums);
   bool isAnagram(std::string s, std::string t);
+  std::vector<std::vector<std::string>>
+  groupAnagrams(std::vector<std::string> &strs);
   Solution();
 };
 } // namespace leetcode
