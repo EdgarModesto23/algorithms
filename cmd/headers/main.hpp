@@ -17,6 +17,7 @@ public:
   bool isAnagram(std::string s, std::string t);
   std::vector<std::vector<std::string>>
   groupAnagrams(std::vector<std::string> &strs);
+  std::vector<int> topKFrecuent(std::vector<int> &nums, int k);
   Solution();
 };
 } // namespace leetcode
