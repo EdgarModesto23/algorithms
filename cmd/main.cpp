@@ -7,7 +7,7 @@
 using namespace algorithms;
 
 int main(int argc, char *argv[]) {
-  auto a = 'K';
+  auto a = 'L';
   switch (a) {
   case 'A': {
     std::vector<int> unsorted_vector = {5, 3, 2, 6, 1, 4};
@@ -94,6 +94,15 @@ int main(int argc, char *argv[]) {
     auto res{sol.topKFrecuent(nums, 2)};
     for (auto i : res) {
       std::cout << i << "\n";
+    }
+    break;
+  }
+  case 'L': {
+    leetcode::Solution sol;
+    std::vector<int> nums{1};
+    auto res{sol.productExceptSelf(nums)};
+    for (auto i : res) {
+      std::cout << i << ", ";
     }
     break;
   }

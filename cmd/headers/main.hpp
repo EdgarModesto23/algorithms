@@ -18,6 +18,7 @@ public:
   std::vector<std::vector<std::string>>
   groupAnagrams(std::vector<std::string> &strs);
   std::vector<int> topKFrecuent(std::vector<int> &nums, int k);
+  std::vector<int> productExceptSelf(std::vector<int> &nums);
   Solution();
 };
 } // namespace leetcode
