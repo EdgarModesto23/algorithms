@@ -20,6 +20,7 @@ public:
   std::vector<int> topKFrecuent(std::vector<int> &nums, int k);
   std::vector<int> productExceptSelf(std::vector<int> &nums);
   bool isValidSudoku(std::vector<std::vector<char>> &board);
+  int longestConsecutive(std::vector<int> &nums);
   Solution();
 };
 } // namespace leetcode

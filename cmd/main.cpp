@@ -7,7 +7,7 @@
 using namespace algorithms;
 
 int main(int argc, char *argv[]) {
-  auto a = 'M';
+  auto a = 'N';
   switch (a) {
   case 'A': {
     std::vector<int> unsorted_vector = {5, 3, 2, 6, 1, 4};
@@ -147,6 +147,14 @@ int main(int argc, char *argv[]) {
 
     break;
   }
+  case 'N': {
+    leetcode::Solution sol;
+    std::vector<int> nums{0, 3, 7, 2, 5, 8, 4, 6, 1};
+    auto res{sol.longestConsecutive(nums)};
+    std::cout << res << "\n";
+    break;
+  }
+
   default: {
     std::cout << "No parameters" << std::endl;
   }
