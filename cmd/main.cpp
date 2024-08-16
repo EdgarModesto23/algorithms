@@ -7,7 +7,7 @@
 using namespace algorithms;
 
 int main(int argc, char *argv[]) {
-  auto a = 'N';
+  auto a = 'O';
   switch (a) {
   case 'A': {
     std::vector<int> unsorted_vector = {5, 3, 2, 6, 1, 4};
@@ -154,7 +154,16 @@ int main(int argc, char *argv[]) {
     std::cout << res << "\n";
     break;
   }
-
+  case 'O': {
+    leetcode::Solution sol;
+    std::string s{"A man, a plan, a canal: Panama"};
+    std::string isnot{"chvalones"};
+    auto res{sol.isPalindrome(s)};
+    auto nores{sol.isPalindrome(isnot)};
+    std::cout << res << "\n";
+    std::cout << nores << "\n";
+    break;
+  }
   default: {
     std::cout << "No parameters" << std::endl;
   }
