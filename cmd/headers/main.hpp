@@ -22,6 +22,7 @@ public:
   bool isValidSudoku(std::vector<std::vector<char>> &board);
   int longestConsecutive(std::vector<int> &nums);
   bool isPalindrome(std::string s);
+  std::vector<int> twoSum2(std::vector<int> &numbers, int target);
   Solution();
 };
 } // namespace leetcode

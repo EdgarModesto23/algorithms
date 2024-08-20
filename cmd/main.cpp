@@ -1,4 +1,5 @@
 #include "main.hpp"
+#include <algorithm>
 #include <iostream>
 #include <ostream>
 #include <string>
@@ -7,7 +8,7 @@
 using namespace algorithms;
 
 int main(int argc, char *argv[]) {
-  auto a = 'O';
+  auto a = 'P';
   switch (a) {
   case 'A': {
     std::vector<int> unsorted_vector = {5, 3, 2, 6, 1, 4};
@@ -162,6 +163,16 @@ int main(int argc, char *argv[]) {
     auto nores{sol.isPalindrome(isnot)};
     std::cout << res << "\n";
     std::cout << nores << "\n";
+    break;
+  }
+  case 'P': {
+    leetcode::Solution sol;
+    std::vector<int> nums{-1, 0};
+    auto res{sol.twoSum2(nums, -1)};
+    for (auto i : res) {
+      std::cout << i << ", ";
+    }
+    std::cout << "\n";
     break;
   }
   default: {
